@@ -1,5 +1,7 @@
 这是面向新人的**Django搭建个人博客教程**的整个项目代码。
+
 点击下面的链接前往教程：
+
 [Django搭建个人博客](http://www.dusaiphoto.com/article/article-detail/2/)
 
 ## 教程特点
@@ -16,5 +18,11 @@
 - **每天能抽出一个小时学习**
 
 ---
-- 有疑问请在[杜赛的个人网站](http://www.dusaiphoto.com)留言，我会尽快回复。
-- 或Email私信我：dusaiphoto@foxmail.com
+- [杜赛的个人网站](http://www.dusaiphoto.com)不定期更新关于编程、光学和摄影的文章，欢迎做客。
+- 我的Email地址：dusaiphoto@foxmail.com
+
+## 更新列表
+### 2018.08.25
+- 创建了项目
+- 创建了article应用
+- 编写了article模型
