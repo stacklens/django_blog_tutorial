@@ -17,7 +17,7 @@
 - **有一点点最基础的python编程知识**
 - **每天能抽出一个小时学习**
 
----
+## 联系方式
 - [杜赛的个人网站](http://www.dusaiphoto.com)不定期更新关于编程、光学和摄影的文章，欢迎做客。
 - 我的Email地址：dusaiphoto@foxmail.com
 
