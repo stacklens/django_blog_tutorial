@@ -8,7 +8,7 @@ from django.utils import timezone
 
 # Django中所有的模型(Model)都必须继承django.db.models.Model模型，即顶部的导入
 # 建立博客文章类 class Article，处理与文章有关的数据，它包含需要的字段和保存数据的行为
-class Article(models.Model):
+class ArticlePost(models.Model):
 
     # 定义文章作者。 author 通过 models.ForeignKey 外键与内建的 User 模型关联在一起
     # 参数 on_delete 用于指定数据删除的方式，避免两个关联表的数据不一致。通常设置为 CASCADE 级联删除就可以了
