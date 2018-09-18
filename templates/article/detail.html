@@ -4,7 +4,7 @@
 
 <!-- 写入 base.html 中定义的 title -->
 {% block title %}
-    文章详情
+文章详情
 {% endblock title %}
 
 <!-- 写入 base.html 中定义的 content -->
@@ -18,9 +18,10 @@
 		<div class="col-12 alert alert-success">作者：{{ article.author }}</div>
 		<!-- 文章正文 -->
 		<div class="col-12">
-			<p>{{ article.body }}</p>
+			<p>{{ article.body|safe }}</p>
 		</div>
 	</div>
 </div>
+
 
 {% endblock content %}
