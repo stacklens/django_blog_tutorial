@@ -1,0 +1,35 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %} {% load staticfiles %}
+<!-- 写入 base.html 中定义的 title -->
+{% block title %} 更新文章 {% endblock title %}
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+<!-- 写文章表单 -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <!-- 提交文章的表单 -->
+            <form method="post" action=".">
+                <!-- Django中需要POST数据的地方都必须有csrf_token -->
+                {% csrf_token %}
+                <!-- 文章标题 -->
+                <div class="form-group">
+                    <!-- 标签 -->
+                    <label for="title">文章标题</label>
+                    <!-- 在 value 属性中指定文本框的初始值为旧的内容，即 article 对象中的 title 字段 -->
+                    <input type="text" class="form-control" id="title" name="title" value="{{ article.title }}">
+                </div>
+                <!-- 文章正文 -->
+                <div class="form-group">
+                    <label for="body">文章正文</label>
+                    <!-- 文本域不需要 value 属性，直接在标签体中嵌入数据即可 -->
+                    <textarea type="text" class="form-control" id="body" name="body" rows="12">{{ article.body }}</textarea>
+                </div>
+                <!-- 提交按钮 -->
+                <button type="submit" class="btn btn-primary">完成</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
