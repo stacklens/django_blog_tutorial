@@ -13,7 +13,41 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'article:article_list' %}">文章</a>
                 </li>
+                <!-- Django的 if 模板语句 -->
+                {% if user.is_authenticated %}
+                    <!-- 如果用户已经登录，则显示用户名下拉框 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ user.username }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" onclick="user_delete()">删除用户</a>
+                            <a class="dropdown-item" href='{% url "userprofile:logout" %}'>退出登录</a>
+                        </div>
+                    </li>
+                <!-- 如果用户未登录，则显示 “登录” -->
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'userprofile:login' %}">登录</a>
+                    </li>                    
+                <!-- if 语句在这里结束 -->
+                {% endif %}
             </ul>
         </div>
     </div>
 </nav>
+
+{% if user.is_authenticated %}
+    <script>
+        function user_delete() {
+            // 调用layer弹窗组件
+            layer.open({
+                title: "确认删除",
+                content: "确认删除用户资料吗？",
+                yes: function(index, layero) {
+                    location.href='{% url "userprofile:delete" user.id %}'
+                },
+            })
+        }
+    </script>
+{% endif %}

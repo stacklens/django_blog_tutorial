@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'password_reset',
+
     'article',
+    'userprofile',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,16 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+# SMTP服务器
+EMAIL_HOST = 'smtp.qq.com'
+# 邮箱名
+EMAIL_HOST_USER = 'dusaiphoto@foxmail.com'
+# 邮箱密码
+EMAIL_HOST_PASSWORD = 'a131930765'
+# 发送邮件的端口
+EMAIL_PORT = 25
+# 是否使用 TLS
+EMAIL_USE_TLS = True
+# 默认的发件人
+DEFAULT_FROM_EMAIL = '杜赛的个人网站 <dusaiphoto@foxmail.com>'
