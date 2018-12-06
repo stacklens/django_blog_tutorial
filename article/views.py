@@ -10,6 +10,8 @@ from .models import ArticlePost
 from .forms import ArticlePostForm
 # 引入markdown模块
 import markdown
+# 引入login装饰器
+from django.contrib.auth.decorators import login_required
 
 
 # 文章列表
@@ -41,6 +43,7 @@ def article_detail(request, id):
 
 
 # 写文章的视图
+@login_required(login_url='/userprofile/login/')
 def article_create(request):
     # 判断用户是否提交数据
     if request.method == "POST":
@@ -50,8 +53,8 @@ def article_create(request):
         if article_post_form.is_valid():
             # 保存数据，但暂时不提交到数据库中
             new_article = article_post_form.save(commit=False)
-            # 指定数据库中 id=1 的用户为作者
-            new_article.author = User.objects.get(id=1)
+            # 指定登录的用户为作者
+            new_article.author = User.objects.get(id=request.user.id)
             # 将新文章保存到数据库中
             new_article.save()
             # 完成后返回到文章列表
