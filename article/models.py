@@ -23,6 +23,9 @@ class ArticlePost(models.Model):
     # 保存大量文本使用 TextField
     body = models.TextField()
 
+    # 浏览量
+    total_views = models.PositiveIntegerField(default=0)
+
     # 文章创建时间。 
     # DateTimeField 为一个日期字段
     # 参数 default=timezone.now 指定其在创建数据时将默认写入当前的时间

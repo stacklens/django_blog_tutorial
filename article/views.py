@@ -21,7 +21,7 @@ def article_list(request):
     # 取出所有博客文章
     article_list = ArticlePost.objects.all()
     # 每页显示 1 篇文章
-    paginator = Paginator(article_list, 1)
+    paginator = Paginator(article_list, 3)
     # 获取 url 中的页码
     page = request.GET.get('page')
     # 将导航对象相应的页码内容返回给 articles
@@ -36,6 +36,11 @@ def article_list(request):
 def article_detail(request, id):
     # 取出相应的文章
     article = ArticlePost.objects.get(id=id)
+
+    # 浏览量 +1
+    article.total_views += 1
+    article.save(update_fields=['total_views'])
+
     # 将markdown语法渲染成html样式
     article.body = markdown.markdown(article.body,
         extensions=[
