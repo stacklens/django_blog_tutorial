@@ -6,13 +6,10 @@
         <!-- 导航入口 -->
         <div>
             <ul class="navbar-nav">
-                <!-- 条目 -->
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'article:article_create' %}">写文章</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'article:article_list' %}">文章</a>
                 </li>
+
                 <!-- Django的 if 模板语句 -->
                 {% if user.is_authenticated %}
                     <!-- 如果用户已经登录，则显示用户名下拉框 -->
@@ -21,6 +18,7 @@
                             {{ user.username }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'article:article_create' %}">写文章</a>
                             <a class="dropdown-item" href='{% url "userprofile:edit" user.id %}'>个人信息</a>
                             <a class="dropdown-item" href="#" onclick="user_delete()">删除用户</a>
                             <a class="dropdown-item" href='{% url "userprofile:logout" %}'>退出登录</a>
