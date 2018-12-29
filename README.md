@@ -20,11 +20,12 @@
 - 我的Email地址：dusaiphoto@foxmail.com
 
 ## 注意事项
-- 仓库中不含静态文件（如static文件夹），请根据教程中的步骤自行安装、配置
-- 仓库中不含依赖项（如Django框架、Pillow等模块），请根据requirements.txt自动安装
+- 根据读者反馈，仓库现在已经包含静态文件了（static目录）
+- 不含依赖项（如Django框架、Pillow等模块），请根据requirements.txt自动安装
 
 ## 更新列表
 ### 2018.12.28
+- 现在包含static目录了
 - 最热文章
 - 文章浏览量
 
