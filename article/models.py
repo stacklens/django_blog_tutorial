@@ -45,5 +45,5 @@ class ArticlePost(models.Model):
     # 函数 __str__ 定义当调用对象的 str() 方法时的返回值内容
     # 它最常见的就是在Django管理后台中做为对象的显示值。因此应该总是为 __str__ 返回一个友好易读的字符串
     def __str__(self):
-    	# return self.title 将文章标题返回
+    	# 将文章标题返回
         return self.title

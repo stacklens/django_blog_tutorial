@@ -7,10 +7,6 @@ app_name = 'article'
 urlpatterns = [
     # 文章列表
     path('article-list/', views.article_list, name='article_list'),
-
-
-    # path('article-list/search/', views.search_articles, name='search_articles'),
-
     # 文章详情
     path('article-detail/<int:id>/', views.article_detail, name='article_detail'),
     # 写文章
