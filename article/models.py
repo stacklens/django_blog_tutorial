@@ -1,10 +1,11 @@
 from django.db import models
-
 # Django本身具有一个简单又完整的账号系统（User），足以满足一般网站的账号申请、建立、权限、群组等基本功能
 # 因此这里导入内建的User模型，以便使用。
 from django.contrib.auth.models import User
 # timezone 用于处理时间相关事务。
 from django.utils import timezone
+
+from django.urls import reverse
 
 # Django中所有的模型(Model)都必须继承django.db.models.Model模型，即顶部的导入
 # 建立博客文章类 class Article，处理与文章有关的数据，它包含需要的字段和保存数据的行为
@@ -47,3 +48,7 @@ class ArticlePost(models.Model):
     def __str__(self):
     	# 将文章标题返回
         return self.title
+
+    # 获取文章地址
+    def get_absolute_url(self):
+        return reverse('article:article_detail', args=[self.id])

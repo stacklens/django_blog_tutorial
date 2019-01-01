@@ -24,12 +24,13 @@ from django.conf.urls.static import static
 # 存放了映射关系的列表
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    # 重置密码app
     path('password-reset/', include('password_reset.urls')),
-
     # 新增代码，配置app的url
     path('article/', include('article.urls', namespace='article')),
     # 用户管理
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
+    # 评论
+    path('comment/', include('comment.urls', namespace='comment')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
