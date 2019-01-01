@@ -2,7 +2,7 @@
 
 点击下面的链接前往教程：
 
-[Django搭建个人博客](http://www.dusaiphoto.com/article/article-detail/2/)
+[Django搭建个人博客](https://www.dusaiphoto.com/article/article-detail/2/)
 
 ## 教程特点
 - 零基础、免费、中文、完整项目代码
@@ -16,15 +16,23 @@
 - **每天能抽出一个小时学习**
 
 ## 联系方式
-- [杜赛的个人网站](http://www.dusaiphoto.com)不定期更新关于编程、光学和摄影的文章，欢迎来访！
+- [杜赛的个人网站](https://www.dusaiphoto.com)不定期更新关于编程、光学和摄影的文章，欢迎来访！
 - 我的Email地址：dusaiphoto@foxmail.com
 
 ## 注意事项
-- 根据读者反馈，仓库现在已经包含静态文件了（static目录）
-- 不含依赖项（如Django框架、Pillow等模块），请根据requirements.txt自动安装
+不含依赖项（如Django框架、Pillow等模块），安装方式如下。
+
+运行**虚拟环境**，输入指令：
+
+```bash
+pip install -r requirements.txt
+```
+
+即可自动安装。
 
 ## 更新列表
 ### 2019.01.01
+- 结束和开始
 - 评论
 
 ### 2018.12.30
