@@ -2,7 +2,7 @@
 
 点击下面的链接前往教程：
 
-[Django搭建个人博客](https://www.dusaiphoto.com/article/article-detail/2/)
+[Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
 
 ## 教程特点
 - 零基础、免费、中文、完整项目代码
