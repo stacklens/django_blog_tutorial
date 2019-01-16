@@ -14,11 +14,16 @@ import markdown
 from django.contrib.auth.decorators import login_required
 # 引入分页模块
 from django.core.paginator import Paginator
-
 # 引入搜索 Q 对象
 from django.db.models import Q
-
+# Comment 模型
 from comment.models import Comment
+
+# 通用类视图
+from django.views import View
+from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView
+
 
 # 文章列表
 def article_list(request):
@@ -177,3 +182,75 @@ def article_update(request, id):
         context = { 'article': article, 'article_post_form': article_post_form }
         # 将响应返回到模板中
         return render(request, 'article/update.html', context)
+
+
+def article_list_example(request):
+    """
+    与下面的类视图做对比的函数
+    简单的文章列表
+    """
+    if request.method == 'GET':
+        articles = ArticlePost.objects.all()
+        context = {'articles': articles}
+        return render(request, 'article/list.html', context)
+
+
+
+class ContextMixin:
+    """
+    Mixin
+    """
+    def get_context_data(self, **kwargs):
+        # 获取原有的上下文
+        context = super().get_context_data(**kwargs)
+        # 增加新上下文
+        context['order'] = 'total_views'
+        return context
+
+
+class ArticleListView(ContextMixin, ListView):
+    """
+    文章列表类视图
+    """
+    # 查询集的名称
+    context_object_name = 'articles'
+    # 模板
+    template_name = 'article/list.html'
+
+    def get_queryset(self):
+        """
+        查询集
+        """
+        queryset = ArticlePost.objects.filter(title='Python')
+        return queryset
+
+
+class ArticleDetailView(DetailView):
+    """
+    文章详情类视图
+    """
+    queryset = ArticlePost.objects.all()
+    context_object_name = 'article'
+    template_name = 'article/detail.html'
+
+    def get_object(self):
+        """
+        获取需要展示的对象
+        """
+        # 首先调用父类的方法
+        obj = super(ArticleDetailView, self).get_object()
+        # 浏览量 +1
+        obj.total_views += 1
+        obj.save(update_fields=['total_views'])
+        return obj
+
+
+class ArticleCreateView(CreateView):
+    """
+    创建文章的类视图
+    """
+    model = ArticlePost
+    fields = '__all__'
+    # 或者有选择的提交字段，比如：
+    # fields = ['title']
+    template_name = 'article/create_by_class_view.html'
