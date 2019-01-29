@@ -1,14 +1,20 @@
-这是面向新人的**Django搭建个人博客教程**的整个项目代码。
+# Django搭建个人博客教程
 
-Django是一个由Python写成的开源Web应用框架，可以用它以更快的速度、更少的代码，搭建一个高性能的网站。
+这是面向新人的**Django搭建个人博客教程**的项目代码。
 
-如果你以前从未接触过web开发，并且想快速上线自己的个性化网站，Django绝对是你的最佳选择。
-
-**教程为零基础的小白准备，教你快速搭建一个自己的博客网站。**
+**教程为零基础的小白准备，目的是快速搭建一个博客网站。**
 
 点击下面的链接前往教程：
 
 [Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
+
+教程内容包括：
+- [搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
+- [博客文章管理](https://www.dusaiphoto.com/article/detail/11/)
+- [用户管理](https://www.dusaiphoto.com/article/detail/31/)
+- [文章分页、统计浏览量及搜索](https://www.dusaiphoto.com/article/detail/42/)
+- [评论功能](https://www.dusaiphoto.com/article/detail/49/)
+- [以及其他功能](https://www.dusaiphoto.com/article/detail/53/)
 
 ## 教程特点
 - 零基础、免费、中文、完整项目代码
@@ -20,7 +26,7 @@ Django是一个由Python写成的开源Web应用框架，可以用它以更快�
 - 有一点点最基础的python编程知识
 - 每天能抽出一个小时学习
 
-不要犹豫说的就是你，现在立刻开始Django的学习吧！
+不要犹豫，现在立刻开始Django的学习吧！
 
 ## 联系方式
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
@@ -29,15 +35,36 @@ Django是一个由Python写成的开源Web应用框架，可以用它以更快�
 ## 注意事项
 不含依赖项（如Django框架、Pillow等模块），安装方式如下。
 
-运行**虚拟环境**，输入指令：
+解压项目后，在项目目录创建**虚拟环境**：
+
+```bash
+python -m venv env
+```
+
+运行**虚拟环境**（Windows环境）:
+
+```bash
+env\Scripts\activate.bat
+```
+
+或（Linux环境）：
+
+```bash
+source env/bin/activate
+```
+
+然后输入：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-即可自动安装。
+即可自动安装所有依赖项。
 
 ## 更新列表
+### 2019.01.29
+- 文章栏目
+
 ### 2019.01.16
 - 基于类的视图
 

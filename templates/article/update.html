@@ -13,6 +13,7 @@
             <form method="post" action=".">
                 <!-- Django中需要POST数据的地方都必须有csrf_token -->
                 {% csrf_token %}
+
                 <!-- 文章标题 -->
                 <div class="form-group">
                     <!-- 标签 -->
@@ -20,12 +21,34 @@
                     <!-- 在 value 属性中指定文本框的初始值为旧的内容，即 article 对象中的 title 字段 -->
                     <input type="text" class="form-control" id="title" name="title" value="{{ article.title }}">
                 </div>
+
+                <!-- 文章栏目 -->
+                <div class="form-group">
+                    <label for="column">栏目</label>
+                    <select class="form-control" 
+                            id="column" 
+                            name="column"
+                    >
+                            <option value="none">请选择栏目..</option>
+                        {% for column in columns %}
+                            <option value="{{ column.id }}"
+                                {% if column.id == article.column.id %}
+                                    selected
+                                {% endif %}
+                            >
+                                {{ column }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
                 <!-- 文章正文 -->
                 <div class="form-group">
                     <label for="body">文章正文</label>
                     <!-- 文本域不需要 value 属性，直接在标签体中嵌入数据即可 -->
                     <textarea type="text" class="form-control" id="body" name="body" rows="12">{{ article.body }}</textarea>
                 </div>
+
                 <!-- 提交按钮 -->
                 <button type="submit" class="btn btn-primary">完成</button>
             </form>

@@ -7,13 +7,40 @@ from django.utils import timezone
 
 from django.urls import reverse
 
+
+class ArticleColumn(models.Model):
+    """
+    文章栏目的 Model
+    """
+    # 栏目标题
+    title = models.CharField(max_length=100, blank=True)
+    
+    # 创建时间
+    created = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
+
+
 # Django中所有的模型(Model)都必须继承django.db.models.Model模型，即顶部的导入
 # 建立博客文章类 class Article，处理与文章有关的数据，它包含需要的字段和保存数据的行为
 class ArticlePost(models.Model):
+    """
+    文章的 Model
+    """
 
     # 定义文章作者。 author 通过 models.ForeignKey 外键与内建的 User 模型关联在一起
     # 参数 on_delete 用于指定数据删除的方式，避免两个关联表的数据不一致。通常设置为 CASCADE 级联删除就可以了
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    # 文章栏目的 “一对多” 外键
+    column = models.ForeignKey(
+        ArticleColumn,
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        related_name='article'
+    )
 
     # 文章标题。
     # models.CharField 为字符串字段，用于保存较短的字符串，比如标题

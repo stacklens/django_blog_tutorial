@@ -36,6 +36,30 @@
             </div>
 
 
+            <!-- 相邻文章导航 -->
+            <br>
+            <div class="row justify-content-end">
+                {% if next_article %}
+                <div class="col-auto mr-auto">
+                    <a  href="{{ next_article.get_absolute_url }}" 
+                        class="btn btn-info"
+                        >
+                        {{ next_article.title }}
+                    </a>
+                </div>
+                {% endif %}
+            {% if pre_article %}
+                <div class="col-auto">
+                    <a  href="{{ pre_article.get_absolute_url }}" 
+                    class="btn btn-info" 
+                    >
+                        {{ pre_article.title }}
+                    </a>
+                </div>
+            {% endif %}
+            </div>
+
+
             <!-- 发表评论 -->
             <hr>
             {% if user.is_authenticated %}
