@@ -4,8 +4,9 @@ language: python
     services:
       - sqlite
     env:
-      -DJANGO=2.1 DB=sqlite
+      - DJANGO=2.1 
+      - DB=sqlite
     install:
       - pip install -r requirements.txt
-    script: # => 7
+    script:
       - python manage.py test
