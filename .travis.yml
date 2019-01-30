@@ -9,6 +9,8 @@ before_install:
   - pip install codecov 
   - pip install coverage
 install: pip install -r requirements.txt
-script: python manage.py test
+script: 
+  - python manage.py test
+  - coverage run tests.py
 after_success:
   - codecov
