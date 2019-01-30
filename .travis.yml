@@ -1,0 +1,11 @@
+language: python
+    python:
+      - "3.7"
+    services:
+      - sqlite
+    env:
+      -DJANGO=2.1 DB=sqlite
+    install:
+      - pip install -r requirements.txt
+    script: # => 7
+      - python manage.py test
