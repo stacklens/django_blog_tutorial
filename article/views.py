@@ -30,30 +30,29 @@ from django.views.generic.edit import CreateView
 def article_list(request):
     search = request.GET.get('search')
     order = request.GET.get('order')
+    column = request.GET.get('column')
+
+    article_list = ArticlePost.objects.all()
+
     # 用户搜索逻辑
     if search:
-        if order == 'total_views':
-            # 用 Q对象 进行联合搜索
-            article_list = ArticlePost.objects.filter(
-                Q(title__icontains=search) |
-                Q(body__icontains=search)
-            ).order_by('-total_views')
-        else:
-            article_list = ArticlePost.objects.filter(
-                Q(title__icontains=search) |
-                Q(body__icontains=search)
-            )
+        article_list = article_list.filter(
+            Q(title__icontains=search) |
+            Q(body__icontains=search)
+        )
     else:
         # 将 search 参数重置为空
         search = ''
-        # 根据GET请求中查询条件
-        # 返回不同排序的对象数组
-        if order == 'total_views':
-            # 按热度排序博文
-            article_list = ArticlePost.objects.all().order_by('-total_views')
-        else:
-            # 取出所有博客文章
-            article_list = ArticlePost.objects.all()
+
+    # 根据GET请求中查询条件
+    # 返回不同的对象数组
+    if column is not None and column.isdigit():
+        # 相同栏目的查询集
+        article_list = article_list.filter(column=column)
+
+    if order == 'total_views':
+        # 按热度排序博文
+        article_list = article_list.order_by('-total_views')
 
     # 每页显示 1 篇文章
     paginator = Paginator(article_list, 3)
@@ -62,7 +61,12 @@ def article_list(request):
     # 将导航对象相应的页码内容返回给 articles
     articles = paginator.get_page(page)
     # 需要传递给模板（templates）的对象
-    context = { 'articles': articles, 'order': order, 'search': search }
+    context = {
+        'articles': articles,
+        'order': order,
+        'search': search,
+        'column': column,
+    }
     # render函数：载入模板，并返回context对象
     return render(request, 'article/list.html', context)
 

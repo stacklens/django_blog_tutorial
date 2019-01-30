@@ -16,12 +16,12 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="{% url 'article:article_list' %}?search={{ search }}">
+                <a href="{% url 'article:article_list' %}?search={{ search }}&column={{ column }}">
                     最新
                 </a>
             </li>
             <li class="breadcrumb-item">
-                <a href="{% url 'article:article_list' %}?order=total_views&search={{ search }}">
+                <a href="{% url 'article:article_list' %}?order=total_views&search={{ search }}&column={{ column }}">
                     最热
                 </a>
             </li>
@@ -61,7 +61,8 @@
             <div class="col-12">
                 <!-- 栏目 -->
                 {% if article.column %}
-                    <button type="button" 
+                    <a  role="button" 
+                        href="{% url 'article:article_list' %}?column={{ article.column.id }}"
                         class="btn btn-sm mb-2
                             {% if article.column.title == 'Django' %}
                                 btn-success
@@ -73,7 +74,7 @@
                         "
                     >
                         {{ article.column }}
-                    </button>
+                    </a>
                 {% endif %}
                 <!-- 标题 -->
                 <h4>
@@ -115,11 +116,11 @@
             <span class="step-links">
                 <!-- 如果不是第一页，则显示上翻按钮 -->
                 {% if articles.has_previous %}
-                    <a href="?page=1&order={{ order }}&search={{ search }}" class="btn btn-success">
+                    <a href="?page=1&order={{ order }}&search={{ search }}&column={{ column }}" class="btn btn-success">
                         &laquo; 1
                     </a>
                     <span>...</span>
-                    <a href="?page={{ articles.previous_page_number }}&order={{ order }}&search={{ search }}" 
+                    <a href="?page={{ articles.previous_page_number }}&order={{ order }}&search={{ search }}&column={{ column }}" 
                        class="btn btn-secondary"
                     >
                         {{ articles.previous_page_number }}
@@ -133,13 +134,13 @@
 
                 <!-- 如果不是最末页，则显示下翻按钮 -->
                 {% if articles.has_next %}
-                    <a href="?page={{ articles.next_page_number }}&order={{ order }}&search={{ search }}"
+                    <a href="?page={{ articles.next_page_number }}&order={{ order }}&search={{ search }}&column={{ column }}"
                        class="btn btn-secondary"
                     >
                         {{ articles.next_page_number }}
                     </a>
                     <span>...</span>
-                    <a href="?page={{ articles.paginator.num_pages }}&order={{ order }}&search={{ search }}"
+                    <a href="?page={{ articles.paginator.num_pages }}&order={{ order }}&search={{ search }}&column={{ column }}"
                        class="btn btn-success"
                     >
                         {{ articles.paginator.num_pages }} &raquo;
