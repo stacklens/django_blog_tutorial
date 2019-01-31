@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/language-python-orange.svg)
+![](https://img.shields.io/badge/django-2.1-green.svg)
+![](https://img.shields.io/badge/bootstrap-4.0-blue.svg)
+![](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+
 # Django搭建个人博客教程
 
 这是面向新人的**Django搭建个人博客教程**的项目代码。
