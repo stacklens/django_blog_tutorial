@@ -9,17 +9,7 @@
 
 **教程为零基础的小白准备，目的是快速搭建一个博客网站。**
 
-点击下面的链接前往教程：
-
-[Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
-
-教程内容包括：
-- [搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
-- [博客文章管理](https://www.dusaiphoto.com/article/detail/11/)
-- [用户管理](https://www.dusaiphoto.com/article/detail/31/)
-- [文章分页、统计浏览量及搜索](https://www.dusaiphoto.com/article/detail/42/)
-- [评论功能](https://www.dusaiphoto.com/article/detail/49/)
-- [以及其他功能](https://www.dusaiphoto.com/article/detail/53/)
+教程链接：[Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
 
 ## 教程特点
 - 零基础、免费、中文、完整项目代码
@@ -33,14 +23,44 @@
 
 不要犹豫，现在立刻开始Django的学习吧！
 
-## 联系方式
-- 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
-- 复杂问题，请Email私信我：dusaiphoto@foxmail.com
+## 教程导航
+- [1.前言](https://www.dusaiphoto.com/article/detail/2/)
+- [2.搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
+- [3.创建并配置APP功能模块](https://www.dusaiphoto.com/article/detail/6/)
+- [4.编写博客文章的Model模型](https://www.dusaiphoto.com/article/detail/11/)
+- [5.View视图初探](https://www.dusaiphoto.com/article/detail/15/)
+- [6.改写文章View视图](https://www.dusaiphoto.com/article/detail/16/)
+- [7.使用 Bootstrap 4 改写模板文件](https://www.dusaiphoto.com/article/detail/18/)
+- [8.文章详情页面](https://www.dusaiphoto.com/article/detail/19/)
+- [9.使用Markdown语法书写文章](https://www.dusaiphoto.com/article/detail/20/)
+- [10.使用Form表单类发表新文章](https://www.dusaiphoto.com/article/detail/22/)
+- [11.删除文章功能](https://www.dusaiphoto.com/article/detail/25/)
+- [12.修改文章功能](https://www.dusaiphoto.com/article/detail/28/)
+- [13.用户的登录和登出](https://www.dusaiphoto.com/article/detail/31/)
+- [14.用户的注册](https://www.dusaiphoto.com/article/detail/32/)
+- [15.用户的删除](https://www.dusaiphoto.com/article/detail/33/)
+- [16.重置用户密码](https://www.dusaiphoto.com/article/detail/34/)
+- [17.扩展用户信息](https://www.dusaiphoto.com/article/detail/37/)
+- [18.上传头像图片](https://www.dusaiphoto.com/article/detail/38/)
+- [19.文章分页](https://www.dusaiphoto.com/article/detail/42/)
+- [20.统计文章浏览量](https://www.dusaiphoto.com/article/detail/45/)
+- [21.根据浏览量对最热文章排序](https://www.dusaiphoto.com/article/detail/46/)
+- [22.简单搜索博客文章](https://www.dusaiphoto.com/article/detail/47/)
+- [23.渲染Markdown文章目录](https://www.dusaiphoto.com/article/detail/48/)
+- [24.在博文中发表评论](https://www.dusaiphoto.com/article/detail/49/)
+- [25.结束和开始](https://www.dusaiphoto.com/article/detail/50/)
+- [26.基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
+- [27.设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
+- 未完待续..
+- [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
+- [读者常见问题](https://www.dusaiphoto.com/article/detail/43/)
 
-## 注意事项
-不含依赖项（如Django框架、Pillow等模块），安装方式如下。
+章节编号与GitHub仓库分支（Branch）编号是对应的。
 
-解压项目后，在项目目录创建**虚拟环境**：
+## 使用说明
+确认你的电脑已经正确安装 Python 3 以上的版本。
+
+下载项目后，在命令行中进入项目目录，并创建**虚拟环境**：
 
 ```bash
 python -m venv env
@@ -58,68 +78,24 @@ env\Scripts\activate.bat
 source env/bin/activate
 ```
 
-然后输入：
+自动安装所有依赖项：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-即可自动安装所有依赖项。
+然后进行数据迁移：
+```bash
+python manage.py migrate
+```
 
-## 更新列表
-### 2019.01.29
-- 文章栏目
+最后运行测试服务器：
+```bash
+python manage.py runserver
+```
 
-### 2019.01.16
-- 基于类的视图
+项目就运行起来了。
 
-### 2019.01.01
-- 结束和开始
-- 评论
-
-### 2018.12.30
-- 文章目录
-- 搜索
-
-### 2018.12.28
-- 现在包含static目录了
-- 最热文章
-- 文章浏览量
-
-### 2018.12.20
-- 文章分页
-
-### 2018.12.05
-
-- 扩展用户信息
-- 上传头像
-
-### 2018.11.03
-
-- 用户登录、登出
-- 用户注册
-- 用户删除
-- 密码重置
-
-### 2018.10.20
-
-- 编写更新文章的功能
-
-### 2018.10.08
-
-- 使用Markdown语法书写文章
-- 删除文章功能
-
-### 2018.09.27
-
-- 使用Form表单类发表新文章
-
-### 2018.09.16
-
-- 用bs改写了模板文件
-- 增加了查看文章详情功能
-
-### 2018.08.25
-- 创建了项目
-- 创建了article应用
-- 编写了article模型
+## 联系方式
+- 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
+- 复杂问题，请Email私信我：dusaiphoto@foxmail.com
