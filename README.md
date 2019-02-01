@@ -24,38 +24,41 @@
 不要犹豫，现在立刻开始Django的学习吧！
 
 ## 教程导航
-- [1.前言](https://www.dusaiphoto.com/article/detail/2/)
-- [2.搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
-- [3.创建并配置APP功能模块](https://www.dusaiphoto.com/article/detail/6/)
-- [4.编写博客文章的Model模型](https://www.dusaiphoto.com/article/detail/11/)
-- [5.View视图初探](https://www.dusaiphoto.com/article/detail/15/)
-- [6.改写文章View视图](https://www.dusaiphoto.com/article/detail/16/)
-- [7.使用 Bootstrap 4 改写模板文件](https://www.dusaiphoto.com/article/detail/18/)
-- [8.文章详情页面](https://www.dusaiphoto.com/article/detail/19/)
-- [9.使用Markdown语法书写文章](https://www.dusaiphoto.com/article/detail/20/)
-- [10.使用Form表单类发表新文章](https://www.dusaiphoto.com/article/detail/22/)
-- [11.删除文章功能](https://www.dusaiphoto.com/article/detail/25/)
-- [12.修改文章功能](https://www.dusaiphoto.com/article/detail/28/)
-- [13.用户的登录和登出](https://www.dusaiphoto.com/article/detail/31/)
-- [14.用户的注册](https://www.dusaiphoto.com/article/detail/32/)
-- [15.用户的删除](https://www.dusaiphoto.com/article/detail/33/)
-- [16.重置用户密码](https://www.dusaiphoto.com/article/detail/34/)
-- [17.扩展用户信息](https://www.dusaiphoto.com/article/detail/37/)
-- [18.上传头像图片](https://www.dusaiphoto.com/article/detail/38/)
-- [19.文章分页](https://www.dusaiphoto.com/article/detail/42/)
-- [20.统计文章浏览量](https://www.dusaiphoto.com/article/detail/45/)
-- [21.根据浏览量对最热文章排序](https://www.dusaiphoto.com/article/detail/46/)
-- [22.简单搜索博客文章](https://www.dusaiphoto.com/article/detail/47/)
-- [23.渲染Markdown文章目录](https://www.dusaiphoto.com/article/detail/48/)
-- [24.在博文中发表评论](https://www.dusaiphoto.com/article/detail/49/)
-- [25.结束和开始](https://www.dusaiphoto.com/article/detail/50/)
-- [26.基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
-- [27.设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
-- 未完待续..
+1. [前言](https://www.dusaiphoto.com/article/detail/2/)
+2. [搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
+3. [创建并配置APP功能模块](https://www.dusaiphoto.com/article/detail/6/)
+4. [编写博客文章的Model模型](https://www.dusaiphoto.com/article/detail/11/)
+5. [View视图初探](https://www.dusaiphoto.com/article/detail/15/)
+6. [改写文章View视图](https://www.dusaiphoto.com/article/detail/16/)
+7. [使用 Bootstrap 4 改写模板文件](https://www.dusaiphoto.com/article/detail/18/)
+8. [文章详情页面](https://www.dusaiphoto.com/article/detail/19/)
+9. [使用Markdown语法书写文章](https://www.dusaiphoto.com/article/detail/20/)
+10. [使用Form表单类发表新文章](https://www.dusaiphoto.com/article/detail/22/)
+11. [删除文章功能](https://www.dusaiphoto.com/article/detail/25/)
+12. [修改文章功能](https://www.dusaiphoto.com/article/detail/28/)
+13. [用户的登录和登出](https://www.dusaiphoto.com/article/detail/31/)
+14. [用户的注册](https://www.dusaiphoto.com/article/detail/32/)
+15. [用户的删除](https://www.dusaiphoto.com/article/detail/33/)
+16. [重置用户密码](https://www.dusaiphoto.com/article/detail/34/)
+17. [扩展用户信息](https://www.dusaiphoto.com/article/detail/37/)
+18. [上传头像图片](https://www.dusaiphoto.com/article/detail/38/)
+19. [文章分页](https://www.dusaiphoto.com/article/detail/42/)
+20. [统计文章浏览量](https://www.dusaiphoto.com/article/detail/45/)
+21. [根据浏览量对最热文章排序](https://www.dusaiphoto.com/article/detail/46/)
+22. [简单搜索博客文章](https://www.dusaiphoto.com/article/detail/47/)
+23. [渲染Markdown文章目录](https://www.dusaiphoto.com/article/detail/48/)
+24. [在博文中发表评论](https://www.dusaiphoto.com/article/detail/49/)
+25. [结束和开始](https://www.dusaiphoto.com/article/detail/50/)
+26. [基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
+27. [设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
+
+以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
 - [读者常见问题](https://www.dusaiphoto.com/article/detail/43/)
 
-章节编号与GitHub仓库分支（Branch）编号是对应的。
+**章节编号与GitHub仓库分支（Branch）编号是对应的。**
+
+更多章节目前正在撰写中。
 
 ## 使用说明
 确认你的电脑已经正确安装 Python 3 以上的版本。
