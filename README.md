@@ -64,13 +64,17 @@
 ## 教程快照
 **由于更多章节正在撰写，界面和功能还在不断变化中，下面展示的和实际可能不一致。**
 
-代码片段：
+**代码片段：**
 ![](http://blog.dusaiphoto.com/github-quickview-3.jpg)
 
-博客首页目前的样子(2019.02.12)：
+---
+
+**博客首页目前的样子(2019.02.12)：**
 ![](http://blog.dusaiphoto.com/github-quickview-2.png)
 
-博客详情页目前的样子(2019.02.12)：
+---
+
+**博客详情页目前的样子(2019.02.12)：**
 ![](http://blog.dusaiphoto.com/github-quickview-1.jpg)
 
 ## 使用说明
