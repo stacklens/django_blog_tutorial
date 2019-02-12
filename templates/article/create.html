@@ -28,7 +28,7 @@
                 <!-- 文章栏目 -->
                 <div class="form-group">
                     <label for="column">栏目</label>
-                    <select class="form-control" 
+                    <select class="form-control col-3" 
                             id="column" 
                             name="column"
                     >
@@ -37,6 +37,18 @@
                             <option value="{{ column.id }}">{{ column }}</option>
                         {% endfor %}
                     </select>
+                </div>
+
+                <!-- 文章标签 -->
+                <div class="form-group">
+                    <!-- 标签 -->
+                    <label for="tags">标签</label>
+                    <!-- 文本框 -->
+                    <input type="text" 
+                           class="form-control col-3" 
+                           id="tags" 
+                           name="tags"
+                    >
                 </div>
 
                 <!-- 文章正文 -->

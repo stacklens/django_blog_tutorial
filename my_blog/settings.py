@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'password_reset',
+    'taggit',
 
     'article',
     'userprofile',

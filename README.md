@@ -13,8 +13,9 @@
 教程链接：[Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
 
 ## 教程特点
-- 零基础、免费、中文、完整项目代码
+- 零基础、免费、中文
 - 基于最新的Python3.7、Django2.1和Bootstrap4版本
+- 完整项目代码，以及详细的注释
 - **博主热情的技术支持！**
 
 ## 适合人群
@@ -52,6 +53,7 @@
 25. [结束和开始](https://www.dusaiphoto.com/article/detail/50/)
 26. [基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
 27. [设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
+28. [文章标签功能](https://www.dusaiphoto.com/article/detail/56/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
@@ -59,7 +61,17 @@
 
 **章节编号与GitHub仓库分支（Branch）编号是对应的。**
 
-更多章节目前正在撰写中。
+## 教程快照
+**由于更多章节正在撰写，界面和功能还在不断变化中，下面展示的和实际可能不一致。**
+
+代码片段：
+![](http://blog.dusaiphoto.com/github-quickview-3.jpg)
+
+博客首页目前的样子(2019.02.12)：
+![](http://blog.dusaiphoto.com/github-quickview-2.png)
+
+博客详情页目前的样子(2019.02.12)：
+![](http://blog.dusaiphoto.com/github-quickview-1.jpg)
 
 ## 使用说明
 确认你的电脑已经正确安装 Python 3 以上的版本。

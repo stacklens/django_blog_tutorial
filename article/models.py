@@ -4,8 +4,10 @@ from django.db import models
 from django.contrib.auth.models import User
 # timezone 用于处理时间相关事务。
 from django.utils import timezone
-
 from django.urls import reverse
+
+# Django-taggit
+from taggit.managers import TaggableManager
 
 
 class ArticleColumn(models.Model):
@@ -41,6 +43,10 @@ class ArticlePost(models.Model):
         on_delete=models.CASCADE,
         related_name='article'
     )
+
+    # 文章标签
+    # 采用 Django-taggit 库
+    tags = TaggableManager(blank=True)
 
     # 文章标题。
     # models.CharField 为字符串字段，用于保存较短的字符串，比如标题
