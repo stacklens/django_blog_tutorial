@@ -54,6 +54,7 @@
 26. [基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
 27. [设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
 28. [文章标签功能](https://www.dusaiphoto.com/article/detail/56/)
+29. [设置文章标题图](https://www.dusaiphoto.com/article/detail/58/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)

@@ -9,6 +9,8 @@ from django.urls import reverse
 # Django-taggit
 from taggit.managers import TaggableManager
 
+# 处理图片
+from PIL import Image
 
 class ArticleColumn(models.Model):
     """
@@ -34,6 +36,9 @@ class ArticlePost(models.Model):
     # 定义文章作者。 author 通过 models.ForeignKey 外键与内建的 User 模型关联在一起
     # 参数 on_delete 用于指定数据删除的方式，避免两个关联表的数据不一致。通常设置为 CASCADE 级联删除就可以了
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    # 文章标题图
+    avatar = models.ImageField(upload_to='article/%Y%m%d/', blank=True)
 
     # 文章栏目的 “一对多” 外键
     column = models.ForeignKey(
@@ -85,3 +90,19 @@ class ArticlePost(models.Model):
     # 获取文章地址
     def get_absolute_url(self):
         return reverse('article:article_detail', args=[self.id])
+
+    # 保存时处理图片
+    def save(self, *args, **kwargs):
+        # 调用原有的 save() 的功能
+        article = super(ArticlePost, self).save(*args, **kwargs)
+
+        # 固定宽度缩放图片大小
+        if self.avatar and not kwargs.get('update_fields'):
+            image = Image.open(self.avatar)
+            (x, y) = image.size
+            new_x = 400
+            new_y = int(new_x * (y / x))
+            resized_image = image.resize((new_x, new_y), Image.ANTIALIAS)
+            resized_image.save(self.avatar.path)
+
+        return article

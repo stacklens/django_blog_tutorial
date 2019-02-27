@@ -19,7 +19,6 @@ from django.db.models import Q
 # Comment 模型
 from comment.models import Comment
 
-
 # 通用类视图
 from django.views import View
 from django.views.generic import ListView, DetailView
@@ -104,7 +103,7 @@ def article_detail(request, id):
         next_article = None
 
 
-    # Moarkdown 语法渲染
+    # Markdown 语法渲染
     md = markdown.Markdown(
         extensions=[
         # 包含 缩写、表格等常用扩展
@@ -135,7 +134,7 @@ def article_create(request):
     # 判断用户是否提交数据
     if request.method == "POST":
         # 将提交的数据赋值到表单实例中
-        article_post_form = ArticlePostForm(data=request.POST)
+        article_post_form = ArticlePostForm(request.POST, request.FILES)
         # 判断提交的数据是否满足模型的要求
         if article_post_form.is_valid():
             # 保存数据，但暂时不提交到数据库中
