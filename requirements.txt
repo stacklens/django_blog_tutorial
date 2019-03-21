@@ -1,4 +1,6 @@
 Django==2.1
+django-ckeditor==5.6.1
+django-js-asset==1.2.2
 django-password-reset==2.0
 django-taggit==0.23.0
 Markdown==2.6.11
