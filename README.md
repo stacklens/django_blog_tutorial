@@ -56,6 +56,7 @@
 28. [文章标签功能](https://www.dusaiphoto.com/article/detail/56/)
 29. [设置文章标题图](https://www.dusaiphoto.com/article/detail/58/)
 30. [富文本编辑器](https://www.dusaiphoto.com/article/detail/60/)
+31. [四个小功能](https://www.dusaiphoto.com/article/detail/62/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)

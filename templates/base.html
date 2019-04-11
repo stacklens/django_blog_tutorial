@@ -14,13 +14,22 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <!-- 引入monikai.css -->
     <link rel="stylesheet" href="{% static 'md_css/monokai.css' %}">
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+      crossorigin="anonymous"
+    >
 </head>
 
 <body>
+
     <!-- 引入导航栏 -->
     {% include 'header.html' %}
     <!-- 预留具体页面的位置 -->
-    {% block content %}{% endblock content %}
+    <div id="wrapper">
+        {% block content %}{% endblock content %}
+        <div id="push"></div>
+    </div>
     <!-- 引入注脚 -->
     {% include 'footer.html' %}
 
@@ -33,6 +42,27 @@
     <script src="{% static 'layer/layer.js' %}"></script>
 
     {% block script %}{% endblock script %}
+
+    {% include 'back_to_top_func.html' %}
+
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #wrapper {
+            min-height: 100%;
+            margin-bottom: -40px;
+        }
+
+        #footer,
+        #push {
+            height: 60px;
+        }
+    </style>
+
 </body>
 
 </html>

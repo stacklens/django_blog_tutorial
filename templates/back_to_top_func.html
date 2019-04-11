@@ -1,0 +1,63 @@
+<!-- Author: 鹦鹉 -->
+<!-- https://ezbox.idv.tw/131/back-to-top-button-without-images -->
+<button type="button" id="BackTop" class="toTop-arrow" style="z-index: 100;"></button>
+
+<script>
+    // 向上滚动的函数
+    $(function () {
+        $('#BackTop').click(function () {
+            $('html,body').animate({scrollTop: 0}, 500);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#BackTop').fadeIn(300);
+            } else {
+                $('#BackTop').stop().fadeOut(300);
+            }
+        }).scroll();
+    });
+</script>
+
+<style>
+    /* 按钮边框的大小、位置、样式 */
+    .toTop-arrow {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 33%;
+        opacity: 0.7;
+        background: black;
+        cursor: pointer;
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        display: none;
+    }
+
+    /* 绘制按钮中的向上箭头 */
+    .toTop-arrow::before, .toTop-arrow::after {
+        width: 31px;
+        height: 7px;
+        border-radius: 3px;
+        background: orange;
+        position: absolute;
+        content: "";
+    }
+
+    .toTop-arrow::before {
+        transform: rotate(-45deg) translate(0, -50%);
+        left: 0.4rem;
+    }
+
+    .toTop-arrow::after {
+        transform: rotate(45deg) translate(0, -50%);
+        right: 0.4rem;
+    }
+
+    /* 取消点击按钮时的聚焦 */
+    .toTop-arrow:focus {
+        outline: none;
+    }
+</style>
