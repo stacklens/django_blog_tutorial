@@ -132,17 +132,17 @@ STATICFILES_DIRS = (
 )
 
 # SMTP服务器
-EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST = 'your smtp'
 # 邮箱名
-EMAIL_HOST_USER = 'dusaiphoto@foxmail.com'
+EMAIL_HOST_USER = 'your email'
 # 邮箱密码
-EMAIL_HOST_PASSWORD = 'a131930765'
+EMAIL_HOST_PASSWORD = 'your password'
 # 发送邮件的端口
 EMAIL_PORT = 25
 # 是否使用 TLS
 EMAIL_USE_TLS = True
 # 默认的发件人
-DEFAULT_FROM_EMAIL = '杜赛的个人网站 <dusaiphoto@foxmail.com>'
+DEFAULT_FROM_EMAIL = 'xxx blog <your email>'
 
 # 媒体文件地址
 MEDIA_URL = '/media/'
