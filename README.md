@@ -57,6 +57,7 @@
 29. [设置文章标题图](https://www.dusaiphoto.com/article/detail/58/)
 30. [富文本编辑器](https://www.dusaiphoto.com/article/detail/60/)
 31. [四个小功能](https://www.dusaiphoto.com/article/detail/62/)
+32. [多级评论](https://www.dusaiphoto.com/article/detail/63/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
@@ -122,7 +123,7 @@ python manage.py runserver
 ## 其他说明
 数据库文件`db.sqlite3`以及媒体文件夹`media`中的内容是方便读者查看示例效果而存在的。
 
-如果你想清楚所有数据及媒体文件，将它们直接删除即可。
+如果你想清除所有数据及媒体文件，将它们直接删除即可。
 
 ## 联系方式
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
