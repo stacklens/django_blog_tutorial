@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'password_reset',
     'taggit',
     'ckeditor',
+    'mptt',
 
     'article',
     'userprofile',

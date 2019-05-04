@@ -119,6 +119,11 @@ python manage.py runserver
 
 项目就运行起来了。
 
+## 其他说明
+数据库文件`db.sqlite3`以及媒体文件夹`media`中的内容是方便读者查看示例效果而存在的。
+
+如果你想清楚所有数据及媒体文件，将它们直接删除即可。
+
 ## 联系方式
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
 - 复杂问题，请Email私信我：dusaiphoto@foxmail.com
