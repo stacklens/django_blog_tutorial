@@ -47,11 +47,17 @@
             data: {body: content},
             // 成功回调
             success: function(e){
-                if(e === '200 OK'){
-                    parent.location.reload();
-                }
+
+                // if(e === '200 OK'){
+                //     parent.location.reload();
+                // }
+
+                if(e.code === '200 OK'){
+                    // 调用父页面的函数
+                    parent.post_reply_and_show_it(e.new_comment_id);
+                };
             }
-        })
+        });
     }
     </script>
 

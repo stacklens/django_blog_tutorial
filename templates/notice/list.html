@@ -15,7 +15,7 @@
         <ul class="list-group">
             {% for notice in notices %}
                 <li class="list-group-item" id="notice_link">
-                    <a href="{% url "notice:update" %}?article_id={{ notice.target.id }}&notice_id={{ notice.id }}"
+                    <a href="{% url "notice:update" %}?article_id={{ notice.target.id }}&notice_id={{ notice.id }}#comment_elem_{{ notice.action_object.id }}"
                        target="_blank"
                     >
                     <span style="color: #5897fb;">

@@ -59,6 +59,7 @@
 31. [四个小功能](https://www.dusaiphoto.com/article/detail/62/)
 32. [多级评论](https://www.dusaiphoto.com/article/detail/63/)
 33. [消息通知](https://www.dusaiphoto.com/article/detail/64/)
+34. [锚点定位](https://www.dusaiphoto.com/article/detail/65/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
