@@ -38,6 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # 可添加需要的第三方登录
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.weibo',
+
     'password_reset',
     'taggit',
     'ckeditor',
@@ -146,7 +154,7 @@ EMAIL_PORT = 25
 # 是否使用 TLS
 EMAIL_USE_TLS = True
 # 默认的发件人
-DEFAULT_FROM_EMAIL = 'xxx blog <your email>'
+DEFAULT_FROM_EMAIL = 'your email'
 
 # 媒体文件地址
 MEDIA_URL = '/media/'
@@ -181,3 +189,15 @@ CKEDITOR_CONFIGS = {
         'extraPlugins': ','.join(['codesnippet', 'prism', 'widget', 'lineutils']),
     }
 }
+
+AUTHENTICATION_BACKENDS = (
+    # 此项使 Django 后台可独立于 allauth 登录
+    'django.contrib.auth.backends.ModelBackend',
+    # 配置 allauth 独有的认证方法，如 email 登录
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+# 设置站点
+SITE_ID = 1
+# 重定向 url
+LOGIN_REDIRECT_URL = '/'

@@ -46,7 +46,7 @@
                 <!-- 如果用户未登录，则显示 “登录” -->
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'userprofile:login' %}">登录</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">登录</a>
                     </li>
                 <!-- if 语句在这里结束 -->
                 {% endif %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block title %}登录{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <br>
+
+            {% get_providers as socialaccount_providers %}
+
+            {% if socialaccount_providers %}
+            <p>
+                {% blocktrans with site.name as site_name %}请登录已有本地账号或<a href="{{ signup_url }}">注册</a>新账号。
+                也可以通过第三方登录:{% endblocktrans %}
+            </p>
+
+            <div class="socialaccount_ballot">
+                <h5 class="mb-2 mt-4">第三方登录：</h5>
+                <ul class="socialaccount_providers">
+                  {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+                </ul>
+                <h5 class="mb-2 mt-4">本地登录：</h5>
+            </div>
+
+            {% include "socialaccount/snippets/login_extra.html" %}
+
+            {% else %}
+            <p>{% blocktrans %}If you have not created an account yet, then please
+            <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+            {% endif %}
+            <div class="col-6">
+                <form class="login" id="login_form" method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_login">账号: </label>
+                        <input type="text" name="login" placeholder="请输入用户名或Email" autofocus="autofocus" required
+                            id="id_login" class="form-control" />
+                        <small class="form-text text-muted ml-1">
+                            还没有账号？
+                            <a href="{% url 'account_signup' %}" style="color: cornflowerblue; ">
+                                注册新账号
+                            </a>
+                        </small>
+                    </div>
+                    <div class="form-group mb-1">
+                        <label for="id_password">
+                            密码:
+                        </label>
+                        <input type="password" name="password" placeholder="请输入密码" required id="id_password"
+                            class="form-control" />
+                        <small class="form-text text-muted ml-1">
+                            <a class="secondaryAction layui-text" href="{% url 'account_reset_password' %}">
+                                忘记密码?
+                            </a>
+                        </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-2">
+                        <input type="checkbox" name="remember" id="id_remember" checked class="custom-control-input" />
+                        <label for="id_remember" class="custom-control-label">
+                            保持登录
+                        </label>
+                    </div>
+                    <button class="primaryAction btn btn-primary" type="submit" hidden id="submit_login">确认</button>
+                    <button class="primaryAction btn btn-primary" type="button" id="on_submit_login">确认</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

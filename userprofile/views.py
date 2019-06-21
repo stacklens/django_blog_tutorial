@@ -86,8 +86,16 @@ def user_delete(request, id):
 @login_required(login_url='/userprofile/login/')
 def profile_edit(request, id):
     user = User.objects.get(id=id)
-    # user_id 是 OneToOneField 自动生成的字段
-    profile = Profile.objects.get(user_id=id)
+
+    # 旧教程代码
+    # profile = Profile.objects.get(user_id=id)
+    # 新教程代码： 获取 Profile
+    if Profile.objects.filter(user_id=id).exists():
+        # user_id 是 OneToOneField 自动生成的字段
+        profile = Profile.objects.get(user_id=id)
+    else:
+        profile = Profile.objects.create(user=user)
+
 
     if request.method == 'POST':
         # 验证修改数据者，是否为用户本人
