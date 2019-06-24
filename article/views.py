@@ -218,6 +218,10 @@ def article_update(request, id):
             else:
                 article.column = None
 
+            if request.FILES.get('avatar'):
+                article.avatar = request.FILES.get('avatar')
+
+            article.tags.set(*request.POST.get('tags').split(','), clear=True)
             article.save()
             # 完成后返回到修改后的文章中。需传入文章的 id 值
             return redirect("article:article_detail", id=id)
@@ -237,6 +241,7 @@ def article_update(request, id):
             'article': article, 
             'article_post_form': article_post_form,
             'columns': columns,
+            'tags': ','.join([x for x in article.tags.names()]),
         }
 
         # 将响应返回到模板中
