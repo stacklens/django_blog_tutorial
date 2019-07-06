@@ -106,3 +106,13 @@ class ArticlePost(models.Model):
             resized_image.save(self.avatar.path)
 
         return article
+
+    def was_created_recently(self):
+        # 若文章是 1 分钟内发表的，则返回 True
+        diff = timezone.now() - self.created
+        
+        # if diff.days <= 0 and diff.seconds < 60:
+        if diff.days == 0 and diff.seconds >= 0 and diff.seconds < 60:
+            return True
+        else:
+            return False
