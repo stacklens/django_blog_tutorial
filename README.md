@@ -62,6 +62,7 @@
 34. [锚点定位](https://www.dusaiphoto.com/article/detail/65/)
 35. [第三方登录](https://www.dusaiphoto.com/article/detail/66/)
 36. [自动化测试](https://www.dusaiphoto.com/article/detail/67/)
+37. [日志记录](https://www.dusaiphoto.com/article/detail/68/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)

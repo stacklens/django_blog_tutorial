@@ -1,5 +1,5 @@
 # 引入redirect重定向模块
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 # 引入User模型
 from django.contrib.auth.models import User
 # 引入HttpResponse
@@ -25,6 +25,12 @@ from comment.forms import CommentForm
 from django.views import View
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView
+
+# from my_blog.settings import LOGGING
+# import logging
+
+# logging.config.dictConfig(LOGGING)
+# logger = logging.getLogger('django.request')
 
 
 # 文章列表
@@ -82,8 +88,10 @@ def article_list(request):
 # 文章详情
 def article_detail(request, id):
     # 取出相应的文章
-    article = ArticlePost.objects.get(id=id)
-
+    # article = ArticlePost.objects.get(id=id)
+    # logger.warning('Something went wrong!')
+    article = get_object_or_404(ArticlePost, id=id)
+    
     # 取出文章评论
     comments = Comment.objects.filter(article=id)
 
