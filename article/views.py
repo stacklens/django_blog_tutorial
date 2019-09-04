@@ -179,7 +179,7 @@ def article_create(request):
         return render(request, 'article/create.html', context)
 
 
-# 删除文章
+# 删除文章，此方式有 csrf 攻击风险
 @login_required(login_url='/userprofile/login/')
 def article_delete(request, id):
     # 根据 id 获取需要删除的文章
@@ -191,6 +191,19 @@ def article_delete(request, id):
     article.delete()
     # 完成删除后返回文章列表
     return redirect("article:article_list")
+
+
+# 安全删除文章
+@login_required(login_url='/userprofile/login/')
+def article_safe_delete(request, id):
+    if request.method == 'POST':
+        article = ArticlePost.objects.get(id=id)
+        if request.user != article.author:
+            return HttpResponse("抱歉，你无权修改这篇文章。")
+        article.delete()
+        return redirect("article:article_list")
+    else:
+        return HttpResponse("仅允许post请求")
 
 
 # 更新文章

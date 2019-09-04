@@ -71,15 +71,18 @@ def user_register(request):
 # 验证用户是否登录的装饰器
 @login_required(login_url='/userprofile/login/')
 def user_delete(request, id):
-    user = User.objects.get(id=id)
-    # 验证登录用户、待删除用户是否相同
-    if request.user == user:
-        #退出登录，删除数据并返回博客列表
-        logout(request)
-        user.delete()
-        return redirect("article:article_list")
+    if request.method == 'POST':
+        user = User.objects.get(id=id)
+        # 验证登录用户、待删除用户是否相同
+        if request.user == user:
+            #退出登录，删除数据并返回博客列表
+            logout(request)
+            user.delete()
+            return redirect("article:article_list")
+        else:
+            return HttpResponse("你没有删除操作的权限。")
     else:
-        return HttpResponse("你没有删除操作的权限。")
+        return HttpResponse("仅接受post请求。")
 
 
 # 编辑用户信息

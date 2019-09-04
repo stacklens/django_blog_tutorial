@@ -56,6 +56,15 @@
 </nav>
 
 {% if user.is_authenticated %}
+<form 
+    style="display:none;" 
+    id="user_delete"
+    action="{% url 'userprofile:delete' user.id %}" 
+    method="POST"
+>
+{% csrf_token %}
+    <button type="submit">发送</button>
+</form>
     <script>
         function user_delete() {
             // 调用layer弹窗组件
@@ -63,7 +72,8 @@
                 title: "确认删除",
                 content: "确认删除用户资料吗？",
                 yes: function(index, layero) {
-                    location.href='{% url "userprofile:delete" user.id %}'
+                    $('form#user_delete button').click();
+                    layer.close(index);
                 },
             })
         }
