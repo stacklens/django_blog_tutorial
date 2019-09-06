@@ -63,6 +63,8 @@
 35. [第三方登录](https://www.dusaiphoto.com/article/detail/66/)
 36. [自动化测试](https://www.dusaiphoto.com/article/detail/67/)
 37. [日志记录](https://www.dusaiphoto.com/article/detail/68/)
+38. [过滤器和标签](https://www.dusaiphoto.com/article/detail/69/)
+39. [点赞功能](https://www.dusaiphoto.com/article/detail/70/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
@@ -128,9 +130,15 @@ python manage.py runserver
 ## 其他说明
 数据库文件`db.sqlite3`以及媒体文件夹`media`中的内容是方便读者查看示例效果而存在的。
 
-管理员账号：dusai  密码：adminpassword
+master版本管理员账号：dusai  密码：adminpassword
 
-如果你想清除所有数据及媒体文件，将它们直接删除即可。
+如果你想清除所有数据及媒体文件，将它们直接删除，并运行：
+
+```bash
+python manage.py createsuperuser
+```
+
+即可重新创建管理员账号。
 
 ## 联系方式
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言

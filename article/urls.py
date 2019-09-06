@@ -17,6 +17,8 @@ urlpatterns = [
     path('article-safe-delete/<int:id>/', views.article_safe_delete, name='article_safe_delete'),
     # 更新文章
     path('article-update/<int:id>/', views.article_update, name='article_update'),
+    # 点赞 +1
+    path('increase-likes/<int:id>/', views.IncreaseLikesView.as_view(), name='increase_likes'),
 
     # 列表类视图
     path('list-view/', views.ArticleListView.as_view(), name='list_view'),

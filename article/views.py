@@ -269,6 +269,15 @@ def article_update(request, id):
         return render(request, 'article/update.html', context)
 
 
+# 点赞数 +1
+class IncreaseLikesView(View):
+    def post(self, request, *args, **kwargs):
+        article = ArticlePost.objects.get(id=kwargs.get('id'))
+        article.likes += 1
+        article.save()
+        return HttpResponse('success')
+
+
 def article_list_example(request):
     """
     与下面的类视图做对比的函数
