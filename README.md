@@ -50,7 +50,7 @@
 22. [简单搜索博客文章](https://www.dusaiphoto.com/article/detail/47/)
 23. [渲染Markdown文章目录](https://www.dusaiphoto.com/article/detail/48/)
 24. [在博文中发表评论](https://www.dusaiphoto.com/article/detail/49/)
-25. [结束和开始](https://www.dusaiphoto.com/article/detail/50/)
+25. [课间休息](https://www.dusaiphoto.com/article/detail/50/)
 26. [基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
 27. [设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
 28. [文章标签功能](https://www.dusaiphoto.com/article/detail/56/)
@@ -65,6 +65,7 @@
 37. [日志记录](https://www.dusaiphoto.com/article/detail/68/)
 38. [过滤器和标签](https://www.dusaiphoto.com/article/detail/69/)
 39. [点赞功能](https://www.dusaiphoto.com/article/detail/70/)
+40. [部署](https://www.dusaiphoto.com/article/detail/71/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
