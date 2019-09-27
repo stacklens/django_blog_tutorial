@@ -25,7 +25,7 @@ SECRET_KEY = '__=s9@oixaun$x^g7-4#10wf_*7zvb8)kl1$j82fj&cyq%^o^3'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # 部署到线上时为 False; 读者在本地调试时请修改为 True
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
