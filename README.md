@@ -66,6 +66,7 @@
 38. [过滤器和标签](https://www.dusaiphoto.com/article/detail/69/)
 39. [点赞功能](https://www.dusaiphoto.com/article/detail/70/)
 40. [部署](https://www.dusaiphoto.com/article/detail/71/)
+41. [期末总结](https://www.dusaiphoto.com/article/detail/72/)
 
 以及：
 - [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
@@ -90,7 +91,7 @@
 ![](http://blog.dusaiphoto.com/github-quickview-1.jpg)
 
 ## 使用说明
-确认你的电脑已经正确安装 Python 3 以上的版本。
+确认你的电脑已经正确安装 Python 3.4 以上的版本。
 
 下载项目后，在命令行中进入项目目录，并创建**虚拟环境**：
 
