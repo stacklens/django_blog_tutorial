@@ -145,3 +145,7 @@ python manage.py createsuperuser
 ## 联系方式
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
 - 复杂问题，请Email私信我：dusaiphoto@foxmail.com
+
+一个人的学习是孤单的。欢迎扫码 Django交流QQ群、博主微信，寻找学伴一起进步吧！
+
+![](https://www.dusaiphoto.com/static/img/QR.jpg)
