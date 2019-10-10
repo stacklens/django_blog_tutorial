@@ -13,13 +13,15 @@
 教程传送门：
 
 - [GitHub](https://github.com/stacklens/django_blog_tutorial/tree/master/md)
-- [博客](https://www.dusaiphoto.com/article/detail/2/)
+- [个人博客](https://www.dusaiphoto.com/article/detail/2/)
+
+> 注：两个版本是完全相同的。需要留言请前往个人博客。
 
 ## 教程特点
 - 零基础、免费、中文
-- 基于最新的Python3.7、Django2.1和Bootstrap4版本
+- 基于最新的 Python 3.7、Django 2.1 和 Bootstrap 4 版本
 - 完整项目代码，以及详细的注释
-- **博主热情的技术支持！**
+- 博主热情的技术支持
 
 ## 适合人群
 - 拥有一台能开机的电脑
@@ -29,6 +31,8 @@
 不要犹豫，现在立刻开始Django的学习吧！
 
 ## 教程导航
+**章节编号与GitHub仓库分支（Branch）编号是对应的。**
+
 **01** - [前言](https://github.com/stacklens/django_blog_tutorial/blob/master/md/01.前言.md)
 
 - Django 简介 / 资源列表 / 提问须知
@@ -235,30 +239,24 @@
 
 - 接下来学什么 / 写在最后
 
-以及：
-
 **42** - [小功能集合贴](https://github.com/stacklens/django_blog_tutorial/blob/master/md/42.小功能集合贴.md)
 
 - 快捷导航 / 页面定位
 
 **43** - [读者常见问题](https://github.com/stacklens/django_blog_tutorial/blob/master/md/43.读者常见问题.md)
 
-**章节编号与GitHub仓库分支（Branch）编号是对应的。**
-
 ## 教程快照
-**由于更多章节正在撰写，界面和功能还在不断变化中，下面展示的和实际可能不一致。**
-
 **代码片段：**
 ![](http://blog.dusaiphoto.com/github-quickview-3.jpg)
 
 ---
 
-**博客首页目前的样子(2019.02.12)：**
+**博客首页片段：**
 ![](http://blog.dusaiphoto.com/github-quickview-2.png)
 
 ---
 
-**博客详情页目前的样子(2019.02.12)：**
+**博客详情页片段：**
 ![](http://blog.dusaiphoto.com/github-quickview-1.jpg)
 
 ## 代码使用说明
@@ -317,6 +315,6 @@ python manage.py createsuperuser
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
 - 复杂问题，请Email私信我：dusaiphoto@foxmail.com
 
-一个人的学习是孤单的。欢迎扫码 Django交流QQ群、博主微信，寻找学伴一起进步吧！
+**一个人的学习是孤单的。欢迎扫码 Django交流QQ群、博主微信，寻找学伴一起进步吧！**
 
 ![](https://www.dusaiphoto.com/static/img/QR.jpg)
