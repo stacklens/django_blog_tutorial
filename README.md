@@ -10,7 +10,10 @@
 
 **教程为零基础的小白准备，目的是快速搭建一个博客网站。**
 
-教程链接：[Django搭建个人博客](https://www.dusaiphoto.com/article/detail/2/)
+教程传送门：
+
+- [GitHub](https://github.com/stacklens/django_blog_tutorial/tree/master/md)
+- [博客](https://www.dusaiphoto.com/article/detail/2/)
 
 ## 教程特点
 - 零基础、免费、中文
@@ -26,51 +29,219 @@
 不要犹豫，现在立刻开始Django的学习吧！
 
 ## 教程导航
-1. [前言](https://www.dusaiphoto.com/article/detail/2/)
-2. [搭建开发环境](https://www.dusaiphoto.com/article/detail/4/)
-3. [创建并配置APP功能模块](https://www.dusaiphoto.com/article/detail/6/)
-4. [编写博客文章的Model模型](https://www.dusaiphoto.com/article/detail/11/)
-5. [View视图初探](https://www.dusaiphoto.com/article/detail/15/)
-6. [改写文章View视图](https://www.dusaiphoto.com/article/detail/16/)
-7. [使用 Bootstrap 4 改写模板文件](https://www.dusaiphoto.com/article/detail/18/)
-8. [文章详情页面](https://www.dusaiphoto.com/article/detail/19/)
-9. [使用Markdown语法书写文章](https://www.dusaiphoto.com/article/detail/20/)
-10. [使用Form表单类发表新文章](https://www.dusaiphoto.com/article/detail/22/)
-11. [删除文章功能](https://www.dusaiphoto.com/article/detail/25/)
-12. [修改文章功能](https://www.dusaiphoto.com/article/detail/28/)
-13. [用户的登录和登出](https://www.dusaiphoto.com/article/detail/31/)
-14. [用户的注册](https://www.dusaiphoto.com/article/detail/32/)
-15. [用户的删除](https://www.dusaiphoto.com/article/detail/33/)
-16. [重置用户密码](https://www.dusaiphoto.com/article/detail/34/)
-17. [扩展用户信息](https://www.dusaiphoto.com/article/detail/37/)
-18. [上传头像图片](https://www.dusaiphoto.com/article/detail/38/)
-19. [文章分页](https://www.dusaiphoto.com/article/detail/42/)
-20. [统计文章浏览量](https://www.dusaiphoto.com/article/detail/45/)
-21. [根据浏览量对最热文章排序](https://www.dusaiphoto.com/article/detail/46/)
-22. [简单搜索博客文章](https://www.dusaiphoto.com/article/detail/47/)
-23. [渲染Markdown文章目录](https://www.dusaiphoto.com/article/detail/48/)
-24. [在博文中发表评论](https://www.dusaiphoto.com/article/detail/49/)
-25. [课间休息](https://www.dusaiphoto.com/article/detail/50/)
-26. [基于类的视图](https://www.dusaiphoto.com/article/detail/52/)
-27. [设置文章的栏目](https://www.dusaiphoto.com/article/detail/55/)
-28. [文章标签功能](https://www.dusaiphoto.com/article/detail/56/)
-29. [设置文章标题图](https://www.dusaiphoto.com/article/detail/58/)
-30. [富文本编辑器](https://www.dusaiphoto.com/article/detail/60/)
-31. [四个小功能](https://www.dusaiphoto.com/article/detail/62/)
-32. [多级评论](https://www.dusaiphoto.com/article/detail/63/)
-33. [消息通知](https://www.dusaiphoto.com/article/detail/64/)
-34. [锚点定位](https://www.dusaiphoto.com/article/detail/65/)
-35. [第三方登录](https://www.dusaiphoto.com/article/detail/66/)
-36. [自动化测试](https://www.dusaiphoto.com/article/detail/67/)
-37. [日志记录](https://www.dusaiphoto.com/article/detail/68/)
-38. [过滤器和标签](https://www.dusaiphoto.com/article/detail/69/)
-39. [点赞功能](https://www.dusaiphoto.com/article/detail/70/)
-40. [部署](https://www.dusaiphoto.com/article/detail/71/)
-41. [期末总结](https://www.dusaiphoto.com/article/detail/72/)
+**01** - [前言](https://github.com/stacklens/django_blog_tutorial/blob/master/md/01.前言.md)
+
+- Django 简介 / 资源列表 / 提问须知
+
+**02** - [教程的开发环境](https://github.com/stacklens/django_blog_tutorial/blob/master/md/02.教程的开发环境.md)
+
+- 环境简介 / 安装 Python / 配置虚拟环境
+- 安装 Django / 创建 Django 项目 / 运行 Django 服务器
+- 代码编辑器 / 浏览器选择
+
+**03** - [创建 APP](https://github.com/stacklens/django_blog_tutorial/blob/master/md/03.创建app.md)
+
+- 认识项目结构 / 注册 APP / 配置访问路径
+
+**04** - [编写 Model](https://github.com/stacklens/django_blog_tutorial/blob/master/md/04.编写Model.md)
+
+- Django 模式简介 / 模型简介
+- 编写 Model / Model 字段分解
+- 数据迁移
+
+**05** - [View 视图初探](https://github.com/stacklens/django_blog_tutorial/blob/master/md/05.View视图初探.md)
+
+- 第一个视图
+- 网站后台概念 / 创建管理员 / 注册 app
+- 检视数据库
+
+**06** - [View 及 Template](https://github.com/stacklens/django_blog_tutorial/blob/master/md/06.View及Template.md)
+
+- 改写视图函数
+- 编写模板 / 错误分析
+- Debug 工具
+
+**07** - [使用Bootstrap改写模板](https://github.com/stacklens/django_blog_tutorial/blob/master/md/07.使用Bootstrap改写模板.md)
+
+- 配置 Bootstrap 4
+- 编写模板 / 模板继承
+
+**08** - [编写文章详情页面](https://github.com/stacklens/django_blog_tutorial/blob/master/md/08.编写文章详情页面.md)
+
+- 详情页面视图 / 详情页面模板
+- 优化网页入口 / 参数传递
+
+**09** - [使用Markdown书写文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/09.使用Markdown书写文章.md)
+
+- 安装 Markdown
+- 在视图中使用 Markdown / 模板渲染
+- 代码高亮 / 故障排查 / 自定义样式
+
+**10** - [发布新文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/10.发布新的文章.md)
+
+- 表单类 / 处理创建请求 / 获取数据
+- csrf_token / 模板中的表单 / 优化写文章入口
+
+**11** - [删除文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/11.删除文章.md)
+
+- get 方式删除文章 / post 方式删除文章
+- 弹窗功能 / 再谈 CSRF
+
+**12** - [更新文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/12.更新文章.md)
+
+- 更新文章视图 / 编写模板 / url 和入口
+
+**13** - [用户的登录和登出](https://github.com/stacklens/django_blog_tutorial/blob/master/md/13.用户的登录和退出.md)
+
+- 用户管理简介 / 再谈表单类
+- 登录视图 / Session 介绍 / 登录模板 / url 及其他设置
+- 用户的登出
+
+**14** - [用户的注册](https://github.com/stacklens/django_blog_tutorial/blob/master/md/14.用户的注册.md)
+
+- 注册表单 /  注册视图 / 模板和 url
+
+**15** - [用户的删除](https://github.com/stacklens/django_blog_tutorial/blob/master/md/15.用户的删除.md)
+
+- 权限与视图 / 检查数据库
+
+**16** - [重置用户密码](https://github.com/stacklens/django_blog_tutorial/blob/master/md/16.重置用户密码.md)
+
+- 安装三方库 / 使用库
+- 配置邮箱 / 常见错误
+
+**17** - [拓展用户信息](https://github.com/stacklens/django_blog_tutorial/blob/master/md/17.拓展用户信息.md)
+
+- 拓展 User / 重建数据库
+- 表单、视图和模板 / 修改 article 视图 / 配置后台
+
+**18** - [上传头像](https://github.com/stacklens/django_blog_tutorial/blob/master/md/18.上传头像.md)
+
+- 必要配置 / 编写 MTV
+
+**19** - [文章分页](https://github.com/stacklens/django_blog_tutorial/blob/master/md/19.文章分页.md)
+
+- Paginator 类 / 分页视图 / 模板编写
+
+**20** - [浏览量](https://github.com/stacklens/django_blog_tutorial/blob/master/md/20.浏览量.md)
+
+- 修改模型 / 列表模板 / 详情模板 / 修改视图
+- 鉴权
+
+**21** - [最热文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/21.最热文章.md)
+
+- 重构视图 / 修改模板及测试
+
+**22** - [搜索文章](https://github.com/stacklens/django_blog_tutorial/blob/master/md/22.搜索文章.md)
+
+- 搜索逻辑 / get 和 post 的区别 / Q对象
+- 面包屑组件 / 搜索框
+
+**23** - [文章目录](https://github.com/stacklens/django_blog_tutorial/blob/master/md/23.文章目录.md)
+
+- 文章中的目录
+- 任意位置的目录
+
+**24** - [评论](https://github.com/stacklens/django_blog_tutorial/blob/master/md/24.评论.md)
+
+- 创建评论 app / 编写评论模型
+- get_object_or_404() / 日期显示及管道符
+
+**25** - [课间休息](https://github.com/stacklens/django_blog_tutorial/blob/master/md/25.课间休息.md)
+
+- 进阶内容介绍
+
+**26** - [基于类的视图](https://github.com/stacklens/django_blog_tutorial/blob/master/md/26.基于类的视图.md)
+
+- 类视图简介 / 类视图与函数视图
+- 通用视图 / 动态过滤 / 在类视图中添加上下文
+- 混入类 / 详情页、编辑页视图
+
+**27** - [文章栏目](https://github.com/stacklens/django_blog_tutorial/blob/master/md/27.文章栏目.md)
+
+- 编写栏目模型 / 在列表中显示栏目
+- 添加测试数据 / 重写文章列表 / 更新MTV
+
+**28** - [文章标签](https://github.com/stacklens/django_blog_tutorial/blob/master/md/28.文章标签.md)
+
+- 安装 Django-taggit
+- 修改模型 / 修改发表视图
+- 标签过滤
+
+**29** - [文章标题图](https://github.com/stacklens/django_blog_tutorial/blob/master/md/29.文章标题图.md)
+
+- 用 Pillow 处理图片 / 模板与测试
+
+**30** - [富文本编辑器](https://github.com/stacklens/django_blog_tutorial/blob/master/md/30.富文本编辑器.md)
+
+- 安装 Django-ckeditor
+- 在后台使用 ckeditor / 代码高亮
+- 在前台使用 ckeditor / 宽度自适应
+
+**31** - [四个小功能](https://github.com/stacklens/django_blog_tutorial/blob/master/md/31.四个重要的小功能.md)
+
+- 回到顶部浮动按钮 / 矢量图标 / 页脚沉底 / 粘性侧边栏
+
+**32** - [多级评论](https://github.com/stacklens/django_blog_tutorial/blob/master/md/32.多级评论.md)
+
+- 安装 Django-mptt
+- 理解树形结构 / 前端渲染 / 遍历树 / 加载 Modal
+- Ajax 提交表单
+
+**33** - [消息通知](https://github.com/stacklens/django_blog_tutorial/blob/master/md/33.消息通知.md)
+
+- 安装 django-notifications
+- 消息通知用法简介
+- UI 表现 / 理解已读与未读
+
+**34** - [锚点定位](https://github.com/stacklens/django_blog_tutorial/blob/master/md/34.锚点定位.md)
+
+- 理解锚点
+- html 拼接 / 视图拼接 / 流动的数据 / 三元运算符
+
+**35** - [第三方登录](https://github.com/stacklens/django_blog_tutorial/blob/master/md/35.第三方登录.md)
+
+- 本地登录 / 美化模板
+- GitHub 登录 / allauth 配置项
+
+**36** - [自动化测试](https://github.com/stacklens/django_blog_tutorial/blob/master/md/36.自动化测试.md)
+
+- 第一个测试 / 暴露 bug 的方法 / 运行单元测试 / 修复 bug
+- 对视图的测试 / Selenium
+
+**37** - [日志记录](https://github.com/stacklens/django_blog_tutorial/blob/master/md/37.日志记录.md)
+
+- 日志的组成
+- 日志配置示例 / 复杂示例
+- 日志分割 / 自定义日志
+
+**38** - [模板过滤器和标签](https://github.com/stacklens/django_blog_tutorial/blob/master/md/38.模板过滤器和标签.md)
+
+- 注册过滤器和标签
+- 更人性化的时间 / 简单标签 / 包含标签
+
+**39** - [点赞功能](https://github.com/stacklens/django_blog_tutorial/blob/master/md/39.点赞功能.md)
+
+- 实现逻辑的探讨 / LocalStorage 介绍
+- JS 与 Ajax / 利用调试接口
+
+**40** - [将项目部署到云服务器](https://github.com/stacklens/django_blog_tutorial/blob/master/md/40.将项目部署到云服务器.md)
+
+- 配置服务器
+- 远程连接 / 代码部署 / Nginx 配置 / Gunicorn 配置
+- 解决遗留问题 / 后期运维 / 域名及优化
+
+**41** - [期末总结](https://github.com/stacklens/django_blog_tutorial/blob/master/md/41.期末总结.md)
+
+- 接下来学什么 / 写在最后
 
 以及：
-- [小功能集合](https://www.dusaiphoto.com/article/detail/53/)
-- [读者常见问题](https://www.dusaiphoto.com/article/detail/43/)
+
+**42** - [小功能集合贴](https://github.com/stacklens/django_blog_tutorial/blob/master/md/42.小功能集合贴.md)
+
+- 快捷导航 / 页面定位
+
+**43** - [读者常见问题](https://github.com/stacklens/django_blog_tutorial/blob/master/md/43.读者常见问题.md)
 
 **章节编号与GitHub仓库分支（Branch）编号是对应的。**
 
@@ -90,7 +261,7 @@
 **博客详情页目前的样子(2019.02.12)：**
 ![](http://blog.dusaiphoto.com/github-quickview-1.jpg)
 
-## 使用说明
+## 代码使用说明
 确认你的电脑已经正确安装 Python 3.4 以上的版本。
 
 下载项目后，在命令行中进入项目目录，并创建**虚拟环境**：
