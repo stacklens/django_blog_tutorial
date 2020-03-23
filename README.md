@@ -245,6 +245,14 @@
 
 **43** - [读者常见问题](https://github.com/stacklens/django_blog_tutorial/blob/master/md/43.读者常见问题.md)
 
+## 联系方式
+- 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
+- 复杂问题，请Email私信我：dusaiphoto@foxmail.com
+
+**一个人的学习是孤单的。欢迎扫码 Django交流QQ群（107143175）、博主微信（dusai0523），和大家一起进步吧！**
+
+![](https://www.dusaiphoto.com/static/img/QR.jpg)
+
 ## 教程快照
 **代码片段：**
 ![](http://blog.dusaiphoto.com/github-quickview-3.jpg)
@@ -310,11 +318,3 @@ python manage.py createsuperuser
 ```
 
 即可重新创建管理员账号。
-
-## 联系方式
-- 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
-- 复杂问题，请Email私信我：dusaiphoto@foxmail.com
-
-**一个人的学习是孤单的。欢迎扫码 Django交流QQ群、博主微信，寻找学伴一起进步吧！**
-
-![](https://www.dusaiphoto.com/static/img/QR.jpg)
