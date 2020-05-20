@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/django-2.1-green.svg)](https://docs.djangoproject.com/en/2.1/releases/2.1/)
 [![](https://img.shields.io/badge/bootstrap-4.1.3-blue.svg)](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 [![Build Status](https://travis-ci.org/stacklens/django_blog_tutorial.svg?branch=master)](https://travis-ci.org/stacklens/django_blog_tutorial)
-[![](https://img.shields.io/badge/license-MIT-000000.svg)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/badge/license-CC_BY_NC_4.0-000000.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 # Django搭建个人博客教程
 
@@ -15,13 +15,12 @@
 - [GitHub](https://github.com/stacklens/django_blog_tutorial/tree/master/md)
 - [个人博客](https://www.dusaiphoto.com/article/detail/2/)
 
-> 注：两个版本是完全相同的。需要留言请前往个人博客。
+> 注：两个版本是完全相同的。
 
 ## 教程特点
 - 零基础、免费、中文
 - 基于最新的 Python 3.7、Django 2.1 和 Bootstrap 4 版本
 - 完整项目代码，以及详细的注释
-- 博主热情的技术支持
 
 ## 适合人群
 - 拥有一台能开机的电脑
@@ -249,7 +248,7 @@
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
 - 复杂问题，请Email私信我：dusaiphoto@foxmail.com
 
-**一个人的学习是孤单的。欢迎扫码 Django交流QQ群（107143175）、博主微信（dusai0523），和大家一起进步吧！**
+**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主微信（dusai0523），和大家一起进步吧！**
 
 ![](https://www.dusaiphoto.com/static/img/QR.jpg)
 
@@ -306,7 +305,6 @@ python manage.py runserver
 
 项目就运行起来了。
 
-## 其他说明
 数据库文件`db.sqlite3`以及媒体文件夹`media`中的内容是方便读者查看示例效果而存在的。
 
 master版本管理员账号：dusai  密码：adminpassword
@@ -318,3 +316,25 @@ python manage.py createsuperuser
 ```
 
 即可重新创建管理员账号。
+
+## 许可协议
+
+《Django 搭建个人博客教程》（包括且不限于文章、代码、图片等内容）遵守 **署名-非商业性使用 4.0 国际 (CC BY-NC 4.0) 协议**。协议内容如下。
+
+**您可以自由地：**
+
+- **共享** — 在任何媒介以任何形式复制、发行本作品。
+- **演绎** — 修改、转换或以本作品为基础进行创作。
+
+只要你遵守许可协议条款，许可人就无法收回你的这些权利。
+
+**惟须遵守下列条件：**
+
+- **署名** — 您必须给出**适当的署名**，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
+- **非商业性使用** — 您不得将本作品用于**商业目的**。
+
+- **没有附加限制** — 您不得适用法律术语或者技术措施从而限制其他人做许可协议允许的事情。
+
+> 适当的署名：您必须提供创作者和署名者的姓名或名称、版权标识、许可协议标识、免责标识和作品链接。
+>
+> 商业目的：主要目的为获得商业优势或金钱回报。
