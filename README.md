@@ -19,7 +19,7 @@
 
 ## 教程特点
 - 零基础、免费、中文
-- 基于最新的 Python 3.7、Django 2.1 和 Bootstrap 4 版本
+- 基于最新的 Python 3.7、Django 2.2 和 Bootstrap 4 版本
 - 完整项目代码，以及详细的注释
 
 ## 适合人群
@@ -248,9 +248,9 @@
 - 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
 - 复杂问题，请Email私信我：dusaiphoto@foxmail.com
 
-**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主微信（dusai0523），和大家一起进步吧！**
+**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号（FullStack程序猿），和大家一起进步吧！**
 
-![](https://www.dusaiphoto.com/static/img/QR.jpg)
+![](http://blog.dusaiphoto.com/QR-h.jpg)
 
 ## 教程快照
 **代码片段：**
