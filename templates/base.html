@@ -14,54 +14,58 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <!-- 引入monikai.css -->
     <link rel="stylesheet" href="{% static 'md_css/monokai.css' %}">
-    <link rel="stylesheet" 
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
-      crossorigin="anonymous"
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"
     >
 </head>
 
 <body>
 
-    <!-- 引入导航栏 -->
-    {% include 'header.html' %}
-    <!-- 预留具体页面的位置 -->
-    <div id="wrapper">
-        {% block content %}{% endblock content %}
-        <div id="push"></div>
-    </div>
-    <!-- 引入注脚 -->
-    {% include 'footer.html' %}
+<!-- 引入导航栏 -->
+{% include 'header.html' %}
+<!-- 预留具体页面的位置 -->
+<div id="wrapper">
+    {% block content %}{% endblock content %}
+    <div id="push"></div>
+</div>
+<!-- 引入注脚 -->
+{% include 'footer.html' %}
 
-    <!-- bootstrap.js 依赖 jquery.js 和popper.js，因此在这里引入 -->
-    <script src="{% static 'jquery/jquery-3.3.1.js' %}"></script>
-    <script src="{% static 'popper/popper-1.14.4.js' %}"></script>
-    <!-- 引入bootstrap的js文件 -->
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-    <!-- 引入layer.js -->
-    <script src="{% static 'layer/layer.js' %}"></script>
+<!-- bootstrap.js 依赖 jquery.js 和popper.js，因此在这里引入 -->
+<script src="{% static 'jquery/jquery-3.3.1.js' %}"></script>
 
-    {% block script %}{% endblock script %}
+<!-- 2020.07.22: popper.js 更新为远程调用的形式 -->
+{#<script src="{% static 'popper/popper-1.14.4.js' %}"></script>#}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1-lts/dist/umd/popper.min.js"></script>
 
-    {% include 'back_to_top_func.html' %}
+<!-- 引入bootstrap的js文件 -->
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- 引入layer.js -->
+<script src="{% static 'layer/layer.js' %}"></script>
+
+{% block script %}{% endblock script %}
+
+{% include 'back_to_top_func.html' %}
 
 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
 
-        #wrapper {
-            min-height: 100%;
-            margin-bottom: -40px;
-        }
+    #wrapper {
+        min-height: 100%;
+        margin-bottom: -40px;
+    }
 
-        #footer,
-        #push {
-            height: 60px;
-        }
-    </style>
+    #footer,
+    #push {
+        height: 60px;
+    }
+</style>
 
 </body>
 
