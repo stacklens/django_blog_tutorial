@@ -244,13 +244,10 @@
 
 **43** - [读者常见问题](https://github.com/stacklens/django_blog_tutorial/blob/master/md/43.读者常见问题.md)
 
-## 联系方式
-- 简单问题，请在[杜赛的个人网站](https://www.dusaiphoto.com)留言
-- 复杂问题，请Email私信我：dusaiphoto@foxmail.com
+## 社区
+**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号、TG群组，和大家一起进步吧！**
 
-**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号（FullStack程序猿），和大家一起进步吧！**
-
-![](http://blog.dusaiphoto.com/QR-h.jpg)
+![](http://blog.dusaiphoto.com/QR-h1.jpg)
 
 ## 教程快照
 **代码片段：**
