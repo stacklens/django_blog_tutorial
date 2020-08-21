@@ -50,15 +50,13 @@ def user_register(request):
     if request.method == 'POST':
         user_register_form = UserRegisterForm(data=request.POST)
         if user_register_form.is_valid():
-            new_user = user_register_form.save(commit=False)
-            # 设置密码
-            new_user.set_password(user_register_form.cleaned_data['password'])
-            new_user.save()
+            new_user = user_register_form.save()
             # 保存好数据后立即登录并返回博客列表页面
             login(request, new_user)
             return redirect("article:article_list")
         else:
-            return HttpResponse("注册表单输入有误。请重新输入~")
+            # 使用默认的表单的check函数不仅会检查密码是否相同，还会检查密码复杂程度，以及是否与其他信息相关等等
+            return HttpResponse("注册表单输入有误。请再次检查输入密码是否符合标准，并重新输入~")
     elif request.method == 'GET':
         user_register_form = UserRegisterForm()
         context = { 'form': user_register_form }
