@@ -1,7 +1,7 @@
 certifi==2019.6.16
 chardet==3.0.4
 defusedxml==0.6.0
-Django==2.1
+Django==2.2.13
 django-allauth==0.39.1
 django-ckeditor==5.6.1
 django-js-asset==1.2.2
