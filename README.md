@@ -13,8 +13,9 @@
 
 - [GitHub](https://github.com/stacklens/django_blog_tutorial/tree/master/md)
 - [个人博客](https://www.dusaiphoto.com/article/detail/2/)
+- [知乎](https://www.zhihu.com/column/django-blog)
 
-> 注：两个版本是完全相同的。
+> 注：内容是完全相同的。
 
 ## 教程特点
 - 零基础、免费、中文
