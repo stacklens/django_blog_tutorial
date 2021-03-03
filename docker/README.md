@@ -1,7 +1,5 @@
 # django-blog with docker
 
-## quict start
-
 run with docker
 
 ```shell
