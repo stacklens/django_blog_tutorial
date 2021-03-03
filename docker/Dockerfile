@@ -15,13 +15,16 @@ RUN pip install --upgrade pip \
 
 FROM python:3.6.10-alpine3.11
 
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /blog/
+
 RUN apk update \
     && apk add --no-cache nginx bash git libjpeg
 
 COPY --from=builder /pippacks /pippacks
 COPY --from=builder /blog /blog
-
-WORKDIR /blog/
 
 RUN pip install --no-index --find-links=/pippacks/wheels -r requirements.txt \
     && pip install gunicorn bootstrap4 --no-index --find-links=/pippacks/wheels \
