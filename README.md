@@ -247,7 +247,7 @@
 ## 社区
 **一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号、TG群组，和大家一起进步吧！**
 
-![](http://blog.dusaiphoto.com/QR-h1.jpg)
+![](https://blog.dusaiphoto.com/QR-0608.jpg)
 
 ## 教程快照
 **代码片段：**
