@@ -29,6 +29,12 @@
 
 不要犹豫，现在立刻开始Django的学习吧！
 
+## 社区
+
+**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号、TG群组，和大家一起进步吧！**
+
+![](https://blog.dusaiphoto.com/QR-0608.jpg)
+
 ## 教程导航
 **章节编号与GitHub仓库分支（Branch）编号是对应的。**
 
@@ -243,11 +249,6 @@
 - 快捷导航 / 页面定位
 
 **43** - [读者常见问题](https://github.com/stacklens/django_blog_tutorial/blob/master/md/43.读者常见问题.md)
-
-## 社区
-**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号、TG群组，和大家一起进步吧！**
-
-![](https://blog.dusaiphoto.com/QR-0608.jpg)
 
 ## 教程快照
 **代码片段：**
