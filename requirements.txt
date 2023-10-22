@@ -14,7 +14,7 @@ idna==2.8
 jsonfield==2.0.2
 Markdown==2.6.11
 oauthlib==3.0.1
-Pillow==5.3.0
+Pillow==9.3.0
 Pygments==2.2.0
 python3-openid==3.1.0
 pytz==2018.5
