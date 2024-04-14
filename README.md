@@ -9,14 +9,6 @@
 
 **教程为零基础的小白准备，目的是快速搭建一个博客网站。**
 
-教程传送门：
-
-- [GitHub](https://github.com/stacklens/django_blog_tutorial/tree/master/md)
-- [个人博客](https://www.dusaiphoto.com/article/detail/2/)
-- [知乎](https://www.zhihu.com/column/django-blog)
-
-> 注：内容是完全相同的。
-
 ## 教程特点
 - 零基础、免费、中文
 - 基于最新的 Python 3.7、Django 2.2 和 Bootstrap 4 版本
@@ -28,12 +20,6 @@
 - 每天能抽出一个小时学习
 
 不要犹豫，现在立刻开始Django的学习吧！
-
-## 社区
-
-**一个人的学习是孤单的。欢迎扫码 Django 交流QQ群（107143175）、博主公众号、TG群组，和大家一起进步吧！**
-
-![](https://blog.dusaiphoto.com/QR-0608.jpg)
 
 ## 教程导航
 **章节编号与GitHub仓库分支（Branch）编号是对应的。**
