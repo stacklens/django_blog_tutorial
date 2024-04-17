@@ -21,6 +21,12 @@
 
 不要犹豫，现在立刻开始Django的学习吧！
 
+## 社群
+
+欢迎来到 Django 学习者群：
+
+![](https://blog.dusaiphoto.com/dusainet-7000K/chameleonQR-0608.jpg)
+
 ## 教程导航
 **章节编号与GitHub仓库分支（Branch）编号是对应的。**
 
